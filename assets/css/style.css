@@ -742,7 +742,7 @@ body {
 }
 
 .social-link {
-  font-size: 14px;
+  font-size: 12px;
   border: 1px solid var(--granite-gray);
   padding: 10px;
   transition: var(--transition-1);
