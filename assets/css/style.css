@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist:wght@100..900&display=swap');
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -19,7 +19,7 @@
   --light-gray: hsl(0, 0%, 80%);
   --mint-cream: hsl(160, 100%, 98%);
   --cultured: hsl(0, 0%, 93%);
-  --go-green: #5454d4;
+  --go-green: #E03C79;
   --white: hsl(0, 0%, 100%);
   --jet: hsl(0, 0%, 18%);
 
@@ -166,7 +166,7 @@ body {
 .h3,
 .h2-sm {
   color: var(--rich-black-fogra-29-1);
-  font-family: var(--ff-cuprum);
+  font-family: "Geist", sans-serif;;
 }
 
 .h1 {
@@ -180,7 +180,11 @@ body {
 .h3,
 .h2-sm { line-height: 1.3; }
 
-.h2-sm { font-size: var(--fs-3); }
+.h2-sm { 
+  font-size: 28px;
+  font-family: "Geist", sans-serif;
+  margin-bottom: -14px;
+}
 
 .h3 { font-size: var(--fs-7); }
 
@@ -204,9 +208,12 @@ body {
 .btn-primary {
   background-color: var(--go-green);
   color: var(--white);
+  border-radius: 10px;
 }
 
-.btn-primary:is(:hover, :focus) { background-color: var(--rich-black-fogra-29-1); }
+.btn-primary:is(:hover, :focus) { 
+  background-color: #e03c79a3; 
+}
 
 .flex-btn {
   display: flex;
@@ -230,7 +237,7 @@ body {
 .text-center { text-align: center; }
 
 .section-subtitle {
-  color: var(--go-green);
+  color: #14BFDE;
   font-weight: var(--fw-500);
 }
 
@@ -281,8 +288,8 @@ body {
 
 .logo {
   color: var(--rich-black-fogra-29-1);
-  font-family: var(--ff-cuprum);
-  font-size: 33px;
+   font-family: "Geist", sans-serif;
+  font-size: 26px;
   font-weight: var(--fw-500);
   line-height: 1;
 }
@@ -356,7 +363,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: var(--mint-cream);
+  background-color: #14bfde05;
   padding-block-start: calc(var(--section-padding) + 50px);
   text-align: center;
   overflow: hidden;
@@ -368,7 +375,7 @@ body {
 }
 
 .hero-subtitle {
-  color: var(--go-green);
+  color: #14BFDE;
   font-size: var(--fs-12);
   font-weight: var(--fw-500);
   max-width: max-content;
@@ -381,12 +388,19 @@ body {
   left: -20px;
   width: 15px;
   height: 2px;
-  background-color: var(--go-green);
+  background-color: #14BFDE;
 }
 
-.hero-title { margin-block: 10px 15px; }
+.hero-title { 
+  margin-block: 10px 15px;
+  font-family: "Geist", sans-serif;
+  font-size: 70px;
 
-.hero-text { color: var(--rich-black-fogra-29-1); }
+}
+
+.hero-text { 
+  color: #000000a6; 
+}
 
 .hero .btn-group { margin-block-start: 40px; }
 
@@ -488,7 +502,10 @@ body {
   #SERVICE
 \*-----------------------------------*/
 
-.service .section-text { margin-block: 15px 50px; }
+.service .section-text { 
+  margin-block: 15px 50px;
+  margin-top: 0px; 
+}
 
 .service .grid-list { margin-block-end: 50px; }
 
@@ -532,7 +549,10 @@ body {
   #FEATURES
 \*-----------------------------------*/
 
-.features .section-text { margin-block: 15px 50px; }
+.features .section-text { 
+  margin-block: 15px 50px;
+  margin-top: 0px;
+}
 
 .features-card {
   position: relative;
@@ -597,15 +617,13 @@ body {
 }
 
 .faq-card {
-  background-color: var(--go-green_5);
+  background-color: #e03c7908;
   border-radius: var(--radius-5);
   overflow: hidden;
 }
 
 .faq-card .card-action {
-  --action-bg: var(--go-green_8);
   --color: var(--granite-gray);
-
   background-color: var(--action-bg);
   text-align: left;
   width: 100%;
@@ -618,8 +636,8 @@ body {
 }
 
 .faq-card .card-action:is(:hover, :focus, .active) {
-  --action-bg: var(--go-green);
-  --color: var(--white);
+  --action-bg: #e03c791c;
+  --color: #1e1e1e;
 }
 
 .faq-card .card-title {
@@ -804,6 +822,7 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   gap: 3rem;
+  margin-top: 10px;
 }
 
 
@@ -1128,7 +1147,7 @@ body {
   }
 
   .navbar-link {
-    color: var(--rich-black-fogra-29-1);
+    color: #000000a6;
     font-weight: var(--fw-500);
     padding-block: 0;
   }
@@ -1141,11 +1160,13 @@ body {
     border: 1px solid var(--go-green);
     padding: 7px 18px;
     transition: var(--transition-1);
+    border-radius: 10px;
   }
 
   .header .btn-outline:is(:hover, :focus) {
-    background-color: var(--go-green);
-    color: var(--white);
+    background-color: #e03c791c;
+    color: var(--go-green);
+    border: 1px solid #fff;
   }
 
 
@@ -1228,6 +1249,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 4rem;
+    margin-top: 30px;
   }
 
 }

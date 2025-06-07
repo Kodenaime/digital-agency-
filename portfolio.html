@@ -50,12 +50,14 @@
   <header class="header" data-header>
     <div class="container">
 
-      <a href="#" class="logo"><img src="./assets/images/logo.png" width="70px" height="70px" alt=""></a>
+      <a href="#" class="logo" style="margin-left: 80px;">
+        <img src="./assets/images/logo.png" width="40px" height="40px" alt="">
+      </a>
 
       <nav class="navbar" data-navbar>
 
         <div class="wrapper">
-          <a href="index.html" class="logo">Innova</a>
+          <a href="#" class="logo">Innova</a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
             <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
@@ -65,27 +67,27 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="./index.html#home" class="navbar-link" data-nav-link>Home</a>
+            <a href="index.html" class="navbar-link" data-nav-link>Home</a>
           </li>
 
           <li>
-            <a href="./index.html#about" class="navbar-link" data-nav-link>About</a>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
           </li>
 
           <li>
-            <a href="./index.html#services" class="navbar-link" data-nav-link>Services</a>
+            <a href="#services" class="navbar-link" data-nav-link>Services</a>
           </li>
 
           <li>
-            <a href="./index.html#features" class="navbar-link" data-nav-link>Features</a>
+            <a href="#features" class="navbar-link" data-nav-link>Features</a>
           </li>
 
-          <!-- <li>
-            <a href="#" class="navbar-link" data-nav-link>Blog</a>
-          </li> -->
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
 
           <li>
-            <a href="./index.html#contact" class="navbar-link" data-nav-link>Contact Us</a>
+            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
           </li>
 
         </ul>
@@ -96,7 +98,7 @@
         <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
       </button>
 
-      <a href="#" class="btn-outline">Lets talk</a>
+      <a href="#contact" class="btn-outline">Lets talk</a>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -246,27 +248,26 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer id="footer" class="footer">
 
     <div class="footer-top section">
       <div class="container">
 
         <div class="footer-brand">
 
-          <a href="#" class="logo">Innova</a>
+          <a href="#" class="logo">Innova Technologies</a>
 
           <p class="footer-text">
-            We specialise in providing services such as Graphics design, UI/UX Designs, Web Development, Brand Creation,
-            social Media marketing and Management, we will help your brand have a strong and amazing online presence.
+           Empowering your digital journey with creativity, strategy, and innovation.
           </p>
 
-          <form action="" class="newsletter-form">
+          <!-- <form action="" class="newsletter-form">
             <input type="email" name="email_address" placeholder="Enter your email" required class="email-field">
 
             <button type="submit" class="form-btn">
               <ion-icon name="paper-plane" aria-hidden="true"></ion-icon>
             </button>
-          </form>
+          </form> -->
 
         </div>
 
@@ -277,27 +278,27 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">UI/UX Design</a>
+            <a href="#services" class="footer-link">UI/UX Design</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Web Development</a>
+            <a href="#services" class="footer-link">Web Development</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Graphic Design</a>
+            <a href="#services" class="footer-link">Graphic Design</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Digital Merketing</a>
+            <a href="#services" class="footer-link">Digital Merketing</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Social Media Management</a>
+            <a href="#services" class="footer-link">Brand Development</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Strategy & Research</a>
+            <a href="#services" class="footer-link">Strategy & Research</a>
           </li>
 
         </ul>
@@ -309,15 +310,15 @@
           </li>
 
           <li>
-            <a href="#" class="footer-link">About Company</a>
+            <a href="#about" class="footer-link">About Company</a>
           </li>
 
           <li>
-            <a href="portfolio.html" class="footer-link">Our Services</a>
+            <a href="#services" class="footer-link">Our Services</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Our Portfolio</a>
+            <a href="#portfolio" class="footer-link">Our Portfolio</a>
           </li>
 
           <!-- <li>
@@ -344,15 +345,16 @@
             <ion-icon name="location" aria-hidden="true"></ion-icon>
 
             <address class="contact-link address">
-              No 8 Olatunji Akinsanya Alabi, off pedro, gbagada, Lagos, Nigeria. 
+              No 8 Olatunji Akinsanya Alabi, off pedro, gbagada, Lagos, Nigeria
             </address>
           </li>
 
           <li class="footer-item">
             <ion-icon name="call" aria-hidden="true"></ion-icon>
 
-            <a href="tel:+2349159626720" class="contact-link">+2349159626720</a>
-            <a href="tel:+234 7068381408" class="contact-link">+234 7068281408</a>
+            <a href="tel:+2349159626720" class="contact-link">+2349159626720</a><br>
+            <i class="fa-brands fa-whatsapp" style="font-size: 20px; color: #E03C79; margin-top: 3px;"></i>
+            <a href="tel:+2347068381408" class="contact-link">+2347068281408</a>
           </li>
 
           <li class="footer-item">
@@ -364,15 +366,15 @@
           <li class="footer-item">
             <ul class="social-list">
 
-                            <!-- <li>
+              <!-- <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-facebook"></ion-icon>
                 </a>
               </li> -->
 
               <li>
-                <a href="https://x.com/innovatech_0?t=GmzHsAQncFaqWX5nv2vGaQ&s=09" class="social-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                <a href="https://x.com/innovatech_0?t=GmzHsAQncFaqWX5nv2vGaQ&s=09" class="social-link" style="height: 35px; padding: 8px;">
+                  <i class="fa-brands fa-x-twitter"></i>
                 </a>
               </li>
 
@@ -382,7 +384,7 @@
                 </a>
               </li>
 
-                            <!-- <li>
+              <!-- <li>
                 <a href="#" class="social-link">
                   <ion-icon name="logo-pinterest"></ion-icon>
                 </a>
@@ -406,11 +408,11 @@
         <ul class="footer-bottom-list">
 
           <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
+            <a href="privacy.html" class="footer-bottom-link">Privacy Policy</a>
           </li>
 
           <li>
-            <a href="#" class="footer-bottom-link">Terms of Use</a>
+            <a href="terms.html" class="footer-bottom-link">Terms of Use</a>
           </li>
 
         </ul>
